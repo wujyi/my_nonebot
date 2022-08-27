@@ -1,6 +1,6 @@
 # `git`快速入门
 
-**复制粘贴于bygg的github,[git快速入门](https://github.com/lllbbbyyy/GCbot/blob/dev/docs/git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md）
+**复制粘贴于bygg的[`github`],[`git快速入门`](https://github.com/lllbbbyyy/GCbot/blob/dev/docs/git%E5%BF%AB%E9%80%9F%E5%85%A5%E9%97%A8.md)**
 
 > :information_source: 本文仍在持续**编写中**，欢迎提出意见与建议！
 
