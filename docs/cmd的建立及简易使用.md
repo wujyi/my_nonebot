@@ -40,3 +40,6 @@
   - 出现[`D:\>`]后，再输入[`cd d:\test\debug`],按回车即可进入根目录
   
   - [![image.png](https://i.postimg.cc/Kcdr2j2C/image.png)](https://postimg.cc/bd920zdR)
+ 
+ 2.
+ - 可用<以及>进行输入输出重定向，以及使用管道运算符|将前一个程序的输出当做后一个程序的输入
