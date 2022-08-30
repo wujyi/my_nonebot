@@ -21,14 +21,14 @@ def check_message(message) -> object:
 # 将函数注册为群请求处理器
 @on_request('group')
 async def _(session: RequestSession):
-    num1 = 819139648
-    num2 = 655082003
+    num1 = 此处改成对应的qq群号
+    num2 = 此处改成对应的qq群号
     # 判断验证信息是否符合要求
     path = 0
     if session.event.group_id == num1:
+        # list为学生名单
         path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list1.txt'
     if session.event.group_id == num2:
-        print('我尽力了')
         path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list2.txt'
     if path == int(0):
         list_name = []
