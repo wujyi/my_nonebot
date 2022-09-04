@@ -10,11 +10,11 @@ async def _():
     bot = nonebot.get_bot()
     now = datetime.now(pytz.timezone('Asia/Shanghai'))
     try:
-        await bot.send_group_msg(group_id=753920893,
+        await bot.send_group_msg(group_id=群号,
                                  message=f'高程作业快到ddl了，请各位同学抓紧完成')
-        await bot.send_group_msg(group_id=753920893,
+        await bot.send_group_msg(group_id=群号,
                                  message=f'[CQ:image,file=https://i.postimg.cc/cH8T2Z7W/QQ-20220828150419.jpg]')
-        await bot.set_group_whole_ban(group_id=753920893)
+        await bot.set_group_whole_ban(group_id=群号)
     except CQHttpError:
         pass
 
@@ -24,6 +24,6 @@ async def _():
     bot = nonebot.get_bot()
     now = datetime.now(pytz.timezone('Asia/Shanghai'))
     try:
-        await bot.set_group_whole_ban(group_id=753920893, enable=False)
+        await bot.set_group_whole_ban(group_id=群号, enable=False)
     except CQHttpError:
         pass
