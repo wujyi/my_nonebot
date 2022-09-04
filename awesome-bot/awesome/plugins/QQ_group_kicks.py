@@ -5,7 +5,7 @@ import re
 
 def check_onestudent(stuBackName) -> object:
     # 正则表达式判断
-    pattern = re.compile(r'^[12][0-9]5\d{4}-[国测计信大建软微自通围电助人光][绘筑科观安拔数件教电信动工气01][0-9智据子化]?[能]?-'
+    pattern = re.compile(r'^[12][0-9]5\d{4}-[国测计信大建软微自通围电助A光][绘筑科观安拔数I件教电信动气01][0-9据子化]?-'
                          r'[\u4e00-\u9fa5]{2,15}$')
 
     # Parse判断
@@ -25,9 +25,9 @@ async def qq_group_kicks(session: CommandSession):
     # 这种调用全都是异步调用，因此需要适当await
     res = await bot.get_group_member_list(group_id=which_group_id, no_cache=True)
     path = '0'
-    num1 = 819139648
-    num2 = 753920893
-    num3 = 753944686
+    num1 = 群号1
+    num2 = 群号2
+    num3 = 群号3
     if session.event.group_id == num1:
         # path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list1.txt'
         path = '/home/ubuntu/bot/awesome-bot/awesome/plugins/list1.txt'
