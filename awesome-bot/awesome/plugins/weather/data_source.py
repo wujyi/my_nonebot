@@ -4,7 +4,7 @@ import requests
 
 async def get_weather_of_city(city: str) -> str:
     res = requests.get(
-        f'https://api.seniverse.com/v3/weather/now.json?key=SjS16fRudAvyYFP_s&location={city}&language=zh-Hans&unit=c')
+        f'https://api.seniverse.com/v3/weather/now.json?key=[你的key]&location={city}&language=zh-Hans&unit=c')
     obj_dic = json.loads(res.text)
     weather1 = obj_dic['results'][0]['now']['text']
     weather2 = obj_dic['results'][0]['now']['temperature']
@@ -13,11 +13,11 @@ async def get_weather_of_city(city: str) -> str:
 
 async def get_weather_of_city_text(city: str) -> str:
     res = requests.get(
-        f'https://geoapi.qweather.com/v2/city/lookup?&location={city}&key=329efb5be5d14df2ba3fa7180d85eca9')
+        f'https://geoapi.qweather.com/v2/city/lookup?&location={city}&key=[你的key]')
     obj_dic = json.loads(res.text)
     location_id = obj_dic['location'][0]['id']
     message = requests.get(
-        f'https://devapi.qweather.com/v7/weather/now?&location={location_id}&key=329efb5be5d14df2ba3fa7180d85eca9')
+        f'https://devapi.qweather.com/v7/weather/now?&location={location_id}&key=[你的key]')
     obj = json.loads(message.text)
     temp = obj['now']['temp']
     feels_like = obj['now']['feelsLike']
