@@ -29,14 +29,14 @@ async def qq_group_kicks(session: CommandSession):
     num2 = 群号2
     num3 = 群号3
     if session.event.group_id == num1:
-        # path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list1.txt'
-        path = '/home/ubuntu/bot/awesome-bot/awesome/plugins/list1.txt'
+        # path = '此处为win下的文件路径'
+        path =  '此处为Linux下的文件路径'
     if session.event.group_id == num2:
-        # path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list2.txt'
-        path = '/home/ubuntu/bot/awesome-bot/awesome/plugins/list2.txt'
+        # path =  '此处为win下的文件路径'
+        path = '此处为Linux下的文件路径'
     if session.event.group_id == num3:
-        # path = 'C:\\Users\\WuCuiCui\\Desktop\\bot\\awesome-bot\\awesome\\plugins\\list3.txt'
-        path = '/home/ubuntu/bot/awesome-bot/awesome/plugins/list3.txt'
+        # path = '此处为win下的文件路径'
+        path = '此处为Linux下的文件路径'
     if path != '0':
         list_name = []
         with open(path, 'r', encoding='utf-8') as f:  # 打开txt文件
