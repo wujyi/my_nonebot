@@ -27,9 +27,9 @@ async def _(session: NoticeSession):  # 发送欢迎消息
 # 将函数注册为群请求处理器
 @on_request('group')
 async def _(session: RequestSession):
-    num1 = 819139648
-    num2 = 753920893
-    num3 = 753944686
+    num1 = 群号1
+    num2 = 群号2
+    num3 = 群号3
     # 判断验证信息是否符合要求
     path = '0'
     if session.event.group_id == num1:
